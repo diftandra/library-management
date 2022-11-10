@@ -14,7 +14,7 @@ import lombok.Data;
 @Entity
 @Table(name="book")
 @Data
-public class Book {
+public class Book extends Audit {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
