@@ -43,7 +43,7 @@ public class BookCategoryController {
         return bookCategoryService.updateBookCategory(bookCategoryRequest);
     }
 
-    @DeleteMapping("/delete-book-category")
+    @DeleteMapping("/delete-book-category/{book-category-id}")
     ResponseEntity<ValueOutput> deleteBookCategory(@PathVariable("book-category-id") Integer bookCategoryId){
         return bookCategoryService.deleteBookCategory(bookCategoryId);
     }

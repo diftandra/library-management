@@ -23,12 +23,24 @@ public class Book extends Audit {
 	
 	@Column(name="book_name")
 	private String bookName;
+
+	@Column(name="book_category_id")
+	private Integer bookCategoryId;
 	
 	@Column(name="book_author")
 	private String bookAuthor;
 	
 	@Column(name="book_image")
 	private Blob bookImage;
+
+	@Column(name="book_number")
+	private String bookNumber;
+
+	@Column(name="book_description")
+	private String bookDescription;
+
+	@Column(name="publisher")
+	private String publisher;
 	
 	@Column(name="is_available")
 	private Boolean isAvailable;
