@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name="book_category")
+@Table(schema = "library", name="book_category")
 @Data
 public class BookCategory extends Audit{
     
