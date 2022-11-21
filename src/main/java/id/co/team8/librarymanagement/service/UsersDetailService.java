@@ -22,8 +22,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-//@CrossOrigin(origins = "http://0.0.0.0:4300")
-@CrossOrigin
 public class UsersDetailService implements UserDetailsService{
 
     @Autowired
