@@ -11,6 +11,7 @@ import id.co.team8.librarymanagement.vio.output.template.ValueOutput;
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin
 public class UserController {
     @Autowired
     UsersDetailService userService;

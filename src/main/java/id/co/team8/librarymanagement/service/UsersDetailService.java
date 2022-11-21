@@ -15,12 +15,15 @@ import id.co.team8.librarymanagement.model.User;
 import id.co.team8.librarymanagement.repository.UsersRepository;
 import id.co.team8.librarymanagement.vio.output.template.ValueOutput;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 @Service
+//@CrossOrigin(origins = "http://0.0.0.0:4300")
+@CrossOrigin
 public class UsersDetailService implements UserDetailsService{
 
     @Autowired
