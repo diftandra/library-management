@@ -23,6 +23,13 @@ public @interface JsonKeyConstant {
     String BOOK_BORROW_DATE = "book_borrow_date";
     String BOOK_RETURN_DATE = "book_return_date";
 
+    /* User */
+    String USER_USER_ID = "user_user_id";
+    String USER_USERNAME = "user_username";
+    String USER_PASSWORD = "user_password";
+    String USER_ROLE = "user_role";
+    String USER_ENABLED = "user_enabled";
+
     /* Audit */
     String CREATED_BY = "created_by";
 	String CREATED_DATE = "created_date";
