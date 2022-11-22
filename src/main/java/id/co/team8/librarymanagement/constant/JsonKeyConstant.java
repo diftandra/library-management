@@ -13,6 +13,7 @@ public @interface JsonKeyConstant {
 
     /* Book Category */
     String BOOK_CATEGORY_ID = "book_category_id";
+    String BOOK_CATEGORY_CODE = "book_category_code";
     String BOOK_CATEGORY_NAME = "book_category_name";
 
     /* Book Transaction */

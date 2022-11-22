@@ -10,6 +10,8 @@ public class BookCategoryRequest {
 
     @JsonProperty(JsonKeyConstant.BOOK_CATEGORY_ID)
     private Integer bookCategoryId;
+
+    
     
     @JsonProperty(JsonKeyConstant.BOOK_CATEGORY_NAME)
 	private String bookCategoryName;

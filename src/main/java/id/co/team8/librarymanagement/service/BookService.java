@@ -14,6 +14,7 @@ import id.co.team8.librarymanagement.model.Book;
 import id.co.team8.librarymanagement.repository.BookRepository;
 import id.co.team8.librarymanagement.utils.Helpers;
 import id.co.team8.librarymanagement.vio.input.BookRequest;
+import id.co.team8.librarymanagement.vio.output.data.BookOutputData;
 import id.co.team8.librarymanagement.vio.output.template.ValueOutput;
 
 @Service
@@ -24,6 +25,8 @@ public class BookService {
 
     public ResponseEntity<ValueOutput> getAllBook(){
         List<Book> books = bookRepository.findAll();
+
+        //BookOutputData bookOutputData =  
         return Helpers.createResponse(ErrorOutput.OK, books);
     }
 
@@ -36,6 +39,7 @@ public class BookService {
         Book book = new Book();
         book.setBookName(bookRequest.getBookName());
         book.setBookDescription(bookRequest.getBookDescription());
+        book.setBookCategoryCode(bookRequest.getBookCategoryCode());
         book.setBookAuthor(bookRequest.getBookAuthor());
         book.setBookNumber(bookRequest.getBookNumber());
         book.setPublisher(bookRequest.getPublisher());
@@ -52,6 +56,7 @@ public class BookService {
         if(book.isPresent()){
             book.get().setBookName(bookRequest.getBookName());
             book.get().setBookDescription(bookRequest.getBookDescription());
+            book.get().setBookCategoryCode(bookRequest.getBookCategoryCode());
             book.get().setBookAuthor(bookRequest.getBookAuthor());
             book.get().setBookNumber(bookRequest.getBookNumber());
             book.get().setPublisher(bookRequest.getPublisher());

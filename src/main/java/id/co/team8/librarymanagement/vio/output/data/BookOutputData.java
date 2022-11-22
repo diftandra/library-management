@@ -1,4 +1,4 @@
-package id.co.team8.librarymanagement.vio.input;
+package id.co.team8.librarymanagement.vio.output.data;
 
 import java.sql.Blob;
 
@@ -8,16 +8,13 @@ import id.co.team8.librarymanagement.constant.JsonKeyConstant;
 import lombok.Data;
 
 @Data
-public class BookRequest {
+public class BookOutputData {
     
     @JsonProperty(JsonKeyConstant.BOOK_ID)
 	private Integer bookId;
 	
 	@JsonProperty(JsonKeyConstant.BOOK_NAME)
 	private String bookName;
-
-	@JsonProperty(JsonKeyConstant.BOOK_CATEGORY_CODE)
-	private String bookCategoryCode;
 	
 	@JsonProperty(JsonKeyConstant.BOOK_AUTHOR)
 	private String bookAuthor;
@@ -36,5 +33,4 @@ public class BookRequest {
 	
 	@JsonProperty(JsonKeyConstant.IS_AVAILABLE)
 	private Boolean isAvailable;
-
 }

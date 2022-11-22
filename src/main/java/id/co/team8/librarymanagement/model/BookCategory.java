@@ -18,6 +18,9 @@ public class BookCategory extends Audit{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="book_category_id")
 	private Integer bookCategoryId;
+
+	@Column(name="book_category_code")
+	private String bookCategoryCode;
 	
 	@Column(name="book_category_name")
 	private String bookCategoryName;

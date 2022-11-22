@@ -34,6 +34,8 @@ public class BookCategoryService {
 
     public ResponseEntity<ValueOutput> addBookCategory(BookCategoryRequest bookCategoryRequest){
         BookCategory bookCategory = new BookCategory();
+        String sqCategoryCode = bookCategoryRepository.getSqCategoryCode();
+        bookCategory.setBookCategoryCode("BC"+sqCategoryCode);
         bookCategory.setBookCategoryName(bookCategoryRequest.getBookCategoryName());
         bookCategory.setIsAvailable(bookCategoryRequest.getIsAvailable());
         bookCategoryRepository.saveAndFlush(bookCategory);

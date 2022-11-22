@@ -24,8 +24,8 @@ public class Book extends Audit {
 	@Column(name="book_name")
 	private String bookName;
 
-	@Column(name="book_category_id")
-	private Integer bookCategoryId;
+	@Column(name="book_category_code")
+	private String bookCategoryCode;
 	
 	@Column(name="book_author")
 	private String bookAuthor;
