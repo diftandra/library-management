@@ -13,7 +13,7 @@ import id.co.team8.librarymanagement.service.UsersDetailService;
 
 @Configuration
 public class BasicSecurityConfiguration {
-    
+
     @Bean
     public UserDetailsService userDetailsService() {
         return new UsersDetailService();
@@ -27,6 +27,8 @@ public class BasicSecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+            .cors()
+            .and()
             .csrf().disable()
             .httpBasic()
             .and()

@@ -15,6 +15,7 @@ import id.co.team8.librarymanagement.vio.output.template.ValueOutput;
 
 @RestController
 @RequestMapping("/book-transaction")
+@CrossOrigin
 public class BookTransactionController {
     
     @Autowired

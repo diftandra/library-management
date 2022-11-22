@@ -19,6 +19,7 @@ import id.co.team8.librarymanagement.vio.output.template.ValueOutput;
 
 @RestController
 @RequestMapping("/book")
+@CrossOrigin
 public class BookController {
 
     @Autowired
